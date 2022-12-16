@@ -1,0 +1,31 @@
+ <!-- form handling -->
+
+ <form action="/api/songs" method="POST" id="ajouter_song">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="title" class="text-light">Title</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="title" value="" placeholder="Zebaze">
+        </div>
+        <div class="form-group">
+            <label for="url" class="text-light">Url</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="url" value="" placeholder="https://Eithel">
+        </div>
+         
+        <div class="form-group">
+            <label for="rating" class="text-light">Rating</label>
+            <input type="number" name="rating" value="">
+        </div>
+
+        <div class="form-group">
+            <label for="artist" class="text-light">Artist</label>
+            <input type="text" name="artist" value="" placeholder="Moi">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Enregistrer</button>
+        </div>
+
+    </div>
+</form>

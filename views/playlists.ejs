@@ -1,0 +1,40 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <!--<a href="/ajouter-playlist" class="border-shadow">
+                    <span class="text-gradient">Ajouter Playlist <i class="fas fa-user"></i></span>
+                </a>-->
+            </div>
+
+            <!-- form handling -->
+            <form action="/playlist" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nom</th>
+                            <th>Song</th>
+                            <th>User</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show_playlist') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

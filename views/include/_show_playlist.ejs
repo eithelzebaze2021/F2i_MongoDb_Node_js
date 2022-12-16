@@ -1,0 +1,16 @@
+<% for(var i = 0; i < playlists.length; i++) { %>
+    <tr>
+        <td><%= i + 1 %></td>
+        <td><%= playlists[i].name %></td>
+        <td><%= playlists[i].songs %></td>
+        <td><%= playlists[i].user %></td>
+        <td>
+            <!--<a href="/modifier-playlist?id=<%= playlists[i]._id%>" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>-->
+            <a class="btn border-shadow delete" data-id=<%= playlists[i]._id%> >
+                <span class="text-gradient"><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+    <% } %>
